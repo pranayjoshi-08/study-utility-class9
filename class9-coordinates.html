@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Orienting Yourself - Class 9 Maths</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header>
+    <h1>📍 Orienting Yourself: The Use of Coordinates</h1>
+    <p>Class 9 Mathematics — Ganita Manjari</p>
+  </header>
+  
+  <main>
+    
+    <section>
+      <h2>📖 Chapter Overview</h2>
+      
+      <p>
+        Coordinates help us describe the exact position of a point
+        on a plane. They are widely used in maps, graphs,
+        navigation and mathematics.
+      </p>
+    </section>
+    
+    <section>
+      <h2>📌 What are Coordinates?</h2>
+      
+      <p>
+        The position of a point can be represented using an ordered
+        pair of numbers written as <strong>(x, y)</strong>.
+      </p>
+      
+      <p>
+        The first number represents the position along the
+        horizontal direction and the second number represents
+        the position along the vertical direction.
+      </p>
+      
+      <p>
+        Example: <strong>(3, 5)</strong>
+      </p>
+      
+      <p>
+        Here, x = 3 and y = 5.
+      </p>
+    </section>
+    
+    <section>
+      <h2>📐 Coordinate Plane</h2>
+      
+      <p>
+        A coordinate plane is formed by two perpendicular number
+        lines:
+      </p>
+      
+      <ul>
+        <li><strong>X-axis</strong> — horizontal axis</li>
+        <li><strong>Y-axis</strong> — vertical axis</li>
+      </ul>
+      
+      <p>
+        The point where the two axes meet is called the
+        <strong>origin</strong>.
+      </p>
+      
+      <p>
+        The coordinates of the origin are:
+        <strong>(0, 0)</strong>
+      </p>
+    </section>
+    
+    <section>
+      <h2>🧭 Four Quadrants</h2>
+      
+      <p>
+        The coordinate plane is divided into four regions called
+        quadrants.
+      </p>
+      
+      <ul>
+        <li>Quadrant I → (+, +)</li>
+        <li>Quadrant II → (-, +)</li>
+        <li>Quadrant III → (-, -)</li>
+        <li>Quadrant IV → (+, -)</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>⭐ Important Points</h2>
+      
+      <ul>
+        <li>The x-coordinate is written first.</li>
+        <li>The y-coordinate is written second.</li>
+        <li>The origin is (0, 0).</li>
+        <li>Points on the x-axis have y = 0.</li>
+        <li>Points on the y-axis have x = 0.</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>✏️ Solved Examples</h2>
+      
+      <h3>Example 1</h3>
+      
+      <p>
+        What are the coordinates of the origin?
+      </p>
+      
+      <details>
+        <summary>Show Answer</summary>
+        <p>
+          ✅ The coordinates of the origin are <strong>(0, 0)</strong>.
+        </p>
+      </details>
+      
+      <h3>Example 2</h3>
+      
+      <p>
+        In which quadrant does the point (4, 7) lie?
+      </p>
+      
+      <details>
+        <summary>Show Answer</summary>
+        <p>
+          Both coordinates are positive, so the point lies in
+          <strong>Quadrant I</strong>.
+        </p>
+      </details>
+      
+      <h3>Example 3</h3>
+      
+      <p>
+        In which quadrant does (-3, -5) lie?
+      </p>
+      
+      <details>
+        <summary>Show Answer</summary>
+        <p>
+          Both coordinates are negative, so the point lies in
+          <strong>Quadrant III</strong>.
+        </p>
+      </details>
+    </section>
+    
+    <section>
+      <h2>📝 Practice Questions</h2>
+      
+      <p>1. What are the coordinates of the origin?</p>
+      
+      <p>2. Which axis is horizontal?</p>
+      
+      <p>3. In which quadrant does (5, -2) lie?</p>
+      
+      <p>4. What is the y-coordinate of a point on the x-axis?</p>
+      
+      <p>5. What is the x-coordinate of a point on the y-axis?</p>
+    </section>
+    
+    <section>
+      <h2>🧠 Quick Quiz</h2>
+      
+      <p>
+        <strong>Q1. What are the coordinates of the origin?</strong>
+      </p>
+      
+      <button onclick="checkAnswer('q1','wrong')">A) (1, 1)</button>
+      <button onclick="checkAnswer('q1','correct')">B) (0, 0)</button>
+      <button onclick="checkAnswer('q1','wrong')">C) (0, 1)</button>
+      <button onclick="checkAnswer('q1','wrong')">D) (1, 0)</button>
+      
+      <p id="q1"></p>
+      
+      
+      <p>
+        <strong>Q2. Which axis is horizontal?</strong>
+      </p>
+      
+      <button onclick="checkAnswer('q2','correct')">A) X-axis</button>
+      <button onclick="checkAnswer('q2','wrong')">B) Y-axis</button>
+      <button onclick="checkAnswer('q2','wrong')">C) Z-axis</button>
+      <button onclick="checkAnswer('q2','wrong')">D) None</button>
+      
+      <p id="q2"></p>
+      
+      
+      <p>
+        <strong>Q3. Which quadrant contains (3, 5)?</strong>
+      </p>
+      
+      <button onclick="checkAnswer('q3','correct')">A) Quadrant I</button>
+      <button onclick="checkAnswer('q3','wrong')">B) Quadrant II</button>
+      <button onclick="checkAnswer('q3','wrong')">C) Quadrant III</button>
+      <button onclick="checkAnswer('q3','wrong')">D) Quadrant IV</button>
+      
+      <p id="q3"></p>
+      
+      
+      <p>
+        <strong>Q4. A point on the x-axis has which y-coordinate?</strong>
+      </p>
+      
+      <button onclick="checkAnswer('q4','correct')">A) 0</button>
+      <button onclick="checkAnswer('q4','wrong')">B) 1</button>
+      <button onclick="checkAnswer('q4','wrong')">C) -1</button>
+      <button onclick="checkAnswer('q4','wrong')">D) Any number</button>
+      
+      <p id="q4"></p>
+      
+      
+      <p>
+        <strong>Q5. Which quadrant contains (-2, -4)?</strong>
+      </p>
+      
+      <button onclick="checkAnswer('q5','wrong')">A) Quadrant I</button>
+      <button onclick="checkAnswer('q5','wrong')">B) Quadrant II</button>
+      <button onclick="checkAnswer('q5','correct')">C) Quadrant III</button>
+      <button onclick="checkAnswer('q5','wrong')">D) Quadrant IV</button>
+      
+      <p id="q5"></p>
+      
+    </section>
+    
+    <button onclick="location.href='class9-maths.html'">
+      ⬅️ Back to Class 9 Maths
+    </button>
+    
+  </main>
+  
+  <footer>
+    <p>© 2026 Study Utility Hub</p>
+  </footer>
+  
+  <script>
+    function checkAnswer(question, answer) {
+      
+      const result = document.getElementById(question);
+      
+      if (answer === "correct") {
+        
+        result.textContent = "🎉 Correct Answer!";
+        result.style.color = "green";
+        result.style.fontWeight = "bold";
+        
+      } else {
+        
+        result.textContent = "❌ Incorrect. Try again!";
+        result.style.color = "red";
+        result.style.fontWeight = "bold";
+        
+      }
+    }
+  </script>
+  
+</body>
+
+</html>

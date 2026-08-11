@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Mathematics of Maybe - Class 9 Maths</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎲 The Mathematics of Maybe</h1>
+    <p>Introduction to Probability — Class 9 Mathematics</p>
+    <p>📘 Ganita Manjari</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>📖 Chapter Overview</h2>
+
+        <p>
+            Probability is the mathematical study of uncertainty.
+            It helps us measure how likely an event is to happen.
+        </p>
+
+        <p>
+            We use probability in everyday situations such as
+            weather forecasts, games, surveys, sports and experiments.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>🎯 What is Probability?</h2>
+
+        <p>
+            Probability tells us how likely an event is to occur.
+        </p>
+
+        <p>
+            Probability is represented by <strong>P(E)</strong>,
+            where E represents an event.
+        </p>
+
+        <p>
+            The value of probability always lies between:
+        </p>
+
+        <p>
+            <strong>0 ≤ P(E) ≤ 1</strong>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>📊 Probability Scale</h2>
+
+        <ul>
+            <li><strong>0</strong> → Impossible</li>
+            <li><strong>Between 0 and 0.5</strong> → Less likely</li>
+            <li><strong>0.5</strong> → Equally likely</li>
+            <li><strong>Between 0.5 and 1</strong> → More likely</li>
+            <li><strong>1</strong> → Certain</li>
+        </ul>
+
+        <p>
+            The closer the probability is to 1, the more likely
+            the event is to happen.
+        </p>
+
+        <p>
+            The closer it is to 0, the less likely the event is.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>🎲 Random Experiment</h2>
+
+        <p>
+            A random experiment is an experiment whose possible
+            outcomes are known, but the exact outcome cannot be
+            predicted with certainty before the experiment.
+        </p>
+
+        <h3>Examples</h3>
+
+        <ul>
+            <li>Tossing a coin</li>
+            <li>Rolling a die</li>
+            <li>Picking a coloured pen randomly</li>
+            <li>Drawing a card from a set of cards</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>🔢 Outcomes</h2>
+
+        <p>
+            An outcome is a possible result of a random experiment.
+        </p>
+
+        <h3>Example: Tossing a Coin</h3>
+
+        <p>
+            Possible outcomes are:
+        </p>
+
+        <p>
+            <strong>H = Heads</strong>
+        </p>
+
+        <p>
+            <strong>T = Tails</strong>
+        </p>
+
+        <p>
+            Therefore:
+        </p>
+
+        <p>
+            <strong>S = {H, T}</strong>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>📦 Sample Space</h2>
+
+        <p>
+            The set containing all possible outcomes of a random
+            experiment is called the <strong>sample space</strong>.
+        </p>
+
+        <h3>One Coin</h3>
+
+        <p>
+            S = {H, T}
+        </p>
+
+        <h3>One Die</h3>
+
+        <p>
+            S = {1, 2, 3, 4, 5, 6}
+        </p>
+
+        <h3>Two Coin Tosses</h3>
+
+        <p>
+            S = {HH, HT, TH, TT}
+        </p>
+
+        <p>
+            Notice that <strong>HT</strong> and <strong>TH</strong>
+            are different outcomes.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>🎯 Events</h2>
+
+        <p>
+            An event is a particular outcome or collection of outcomes
+            from the sample space.
+        </p>
+
+        <h3>Example</h3>
+
+        <p>
+            When a die is rolled, the event of getting an even number is:
+        </p>
+
+        <p>
+            <strong>E = {2, 4, 6}</strong>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>🧮 Theoretical Probability</h2>
+
+        <p>
+            When all possible outcomes are equally likely, the
+            probability of an event E is:
+        </p>
+
+        <p>
+            <strong>
+                P(E) = Number of favourable outcomes /
+                Total number of possible outcomes
+            </strong>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>🪙 Example: Tossing a Coin</h2>
+
+        <p>
+            What is the probability of getting Heads when a fair
+            coin is tossed?
+        </p>
+
+        <details>
+            <summary>Show Solution</summary>
+
+            <p>
+                Sample space:
+                <strong>S = {H, T}</strong>
+            </p>
+
+            <p>
+                Favourable outcomes = 1
+            </p>
+
+            <p>
+                Total outcomes = 2
+            </p>
+
+            <p>
+                P(H) = 1/2
+            </p>
+
+            <p>
+                ✅ Answer = <strong>1/2</strong>
+            </p>
+        </details>
+    </section>
+
+
+    <section>
+        <h2>🎲 Example: Rolling a Die</h2>
+
+        <p>
+            What is the probability of getting an even number
+            when a fair die is rolled?
+        </p>
+
+        <details>
+            <summary>Show Solution</summary>
+
+            <p>
+                Sample space:
+                <strong>{1, 2, 3, 4, 5, 6}</strong>
+            </p>
+
+            <p>
+                Even outcomes:
+                <strong>{2, 4, 6}</strong>
+            </p>
+
+            <p>
+                Favourable outcomes = 3
+            </p>
+
+            <p>
+                Total outcomes = 6
+            </p>
+
+            <p>
+                P(E) = 3/6 = 1/2
+            </p>
+
+            <p>
+                ✅ Answer = <strong>1/2</strong>
+            </p>
+        </details>
+    </section>
+
+
+    <section>
+        <h2>📈 Experimental Probability</h2>
+
+        <p>
+            Experimental probability is based on actual results
+            obtained by performing an experiment.
+        </p>
+
+        <p>
+            It is calculated as:
+        </p>
+
+        <p>
+            <strong>
+                Experimental Probability =
+                Frequency of the event / Total number of trials
+            </strong>
+        </p>
+
+        <h3>Example</h3>
+
+        <p>
+            A coin is tossed 20 times and Heads appears 12 times.
+        </p>
+
+        <p>
+            Experimental probability of Heads:
+        </p>
+
+        <p>
+            <strong>12/20 = 3/5</strong>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>🔬 Experimental vs Theoretical Probability</h2>
+
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Experimental Probability</th>
+                <th>Theoretical Probability</th>
+            </tr>
+
+            <tr>
+                <td>Based on actual experiments</td>
+                <td>Based on possible outcomes</td>
+            </tr>
+
+            <tr>
+                <td>Uses observed frequency</td>
+                <td>Uses favourable outcomes</td>
+            </tr>
+
+            <tr>
+                <td>May change from experiment to experiment</td>
+                <td>Fixed when outcomes are equally likely</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>🌳 Tree Diagrams</h2>
+
+        <p>
+            A tree diagram is a useful way of showing all possible
+            outcomes of a multi-step experiment.
+        </p>
+
+        <h3>Two Coin Tosses</h3>
+
+        <p>
+            First toss:
+        </p>
+
+        <ul>
+            <li>H</li>
+            <li>T</li>
+        </ul>
+
+        <p>
+            From each result, the second toss can again be H or T.
+        </p>
+
+        <p>
+            Therefore:
+        </p>
+
+        <p>
+            <strong>
+                S = {HH, HT, TH, TT}
+            </strong>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>🎨 Example: Coloured Pens</h2>
+
+        <p>
+            Suppose a student can pick one of three colours:
+            Red, Black or Green.
+        </p>
+
+        <p>
+            If a second student also picks one pen, the possible
+            ordered outcomes include:
+        </p>
+
+        <p>
+            RR, RB, RG, BR, BB, BG, GR, GB, GG
+        </p>
+
+        <p>
+            Total outcomes = 9
+        </p>
+
+        <p>
+            Same-colour outcomes:
+            RR, BB, GG
+        </p>
+
+        <p>
+            Therefore:
+        </p>
+
+        <p>
+            <strong>
+                P(Same Colour) = 3/9 = 1/3
+            </strong>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>⭐ Important Points</h2>
+
+        <ul>
+            <li>Probability lies between 0 and 1.</li>
+            <li>An impossible event has probability 0.</li>
+            <li>A certain event has probability 1.</li>
+            <li>The sample space contains all possible outcomes.</li>
+            <li>An event is a selected outcome or collection of outcomes.</li>
+            <li>Experimental probability uses actual observations.</li>
+            <li>Theoretical probability uses possible equally likely outcomes.</li>
+            <li>Tree diagrams help organise multi-step experiments.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>✏️ Solved Examples</h2>
+
+        <h3>Example 1</h3>
+
+        <p>
+            What is the probability of getting a 6 when a fair die
+            is rolled?
+        </p>
+
+        <details>
+            <summary>Show Solution</summary>
+
+            <p>
+                Favourable outcomes = 1
+            </p>
+
+            <p>
+                Total outcomes = 6
+            </p>
+
+            <p>
+                P(6) = 1/6
+            </p>
+
+            <p>
+                ✅ Answer = <strong>1/6</strong>
+            </p>
+        </details>
+
+
+        <h3>Example 2</h3>
+
+        <p>
+            What is the probability of getting an odd number on a die?
+        </p>
+
+        <details>
+            <summary>Show Solution</summary>
+
+            <p>
+                Odd outcomes = {1, 3, 5}
+            </p>
+
+            <p>
+                Favourable outcomes = 3
+            </p>
+
+            <p>
+                Total outcomes = 6
+            </p>
+
+            <p>
+                P(Odd) = 3/6 = 1/2
+            </p>
+
+            <p>
+                ✅ Answer = <strong>1/2</strong>
+            </p>
+        </details>
+
+
+        <h3>Example 3</h3>
+
+        <p>
+            A coin is tossed 30 times and Heads occurs 18 times.
+            Find the experimental probability of Heads.
+        </p>
+
+        <details>
+            <summary>Show Solution</summary>
+
+            <p>
+                Experimental probability =
+                Frequency / Total trials
+            </p>
+
+            <p>
+                = 18/30
+            </p>
+
+            <p>
+                = 3/5
+            </p>
+
+            <p>
+                ✅ Answer = <strong>3/5</strong>
+            </p>
+        </details>
+    </section>
+
+
+    <section>
+        <h2>📝 Practice Questions</h2>
+
+        <p>1. Write the sample space for tossing one coin.</p>
+
+        <p>2. Write the sample space for rolling one die.</p>
+
+        <p>3. Find the probability of getting Heads on a fair coin.</p>
+
+        <p>4. Find the probability of getting an even number on a die.</p>
+
+        <p>5. A die is rolled 20 times and 6 appears 4 times.
+        Find the experimental probability of getting 6.</p>
+    </section>
+
+
+    <section>
+        <h2>🧠 Quick Quiz</h2>
+
+        <p>
+            <strong>Q1. What is the probability of an impossible event?</strong>
+        </p>
+
+        <button onclick="checkAnswer('q1','correct')">A) 0</button>
+        <button onclick="checkAnswer('q1','wrong')">B) 1/2</button>
+        <button onclick="checkAnswer('q1','wrong')">C) 1</button>
+        <button onclick="checkAnswer('q1','wrong')">D) 2</button>
+
+        <p id="q1"></p>
+
+
+        <p>
+            <strong>Q2. What is the probability of a certain event?</strong>
+        </p>
+
+        <button onclick="checkAnswer('q2','wrong')">A) 0</button>
+        <button onclick="checkAnswer('q2','correct')">B) 1</button>
+        <button onclick="checkAnswer('q2','wrong')">C) 1/2</button>
+        <button onclick="checkAnswer('q2','wrong')">D) 2</button>
+
+        <p id="q2"></p>
+
+
+        <p>
+            <strong>Q3. What is the sample space for tossing a coin?</strong>
+        </p>
+
+        <button onclick="checkAnswer('q3','correct')">A) {H, T}</button>
+        <button onclick="checkAnswer('q3','wrong')">B) {H}</button>
+        <button onclick="checkAnswer('q3','wrong')">C) {T}</button>
+        <button onclick="checkAnswer('q3','wrong')">D) {1, 2}</button>
+
+        <p id="q3"></p>
+
+
+        <p>
+            <strong>Q4. What is P(Head) for a fair coin?</strong>
+        </p>
+
+        <button onclick="checkAnswer('q4','wrong')">A) 0</button>
+        <button onclick="checkAnswer('q4','correct')">B) 1/2</button>
+        <button onclick="checkAnswer('q4','wrong')">C) 1</button>
+        <button onclick="checkAnswer('q4','wrong')">D) 2</button>
+
+        <p id="q4"></p>
+
+
+        <p>
+            <strong>
+                Q5. What is the probability of getting an even
+                number on a fair die?
+            </strong>
+        </p>
+
+        <button onclick="checkAnswer('q5','wrong')">A) 1/6</button>
+        <button onclick="checkAnswer('q5','correct')">B) 1/2</button>
+        <button onclick="checkAnswer('q5','wrong')">C) 2/3</button>
+        <button onclick="checkAnswer('q5','wrong')">D) 1</button>
+
+        <p id="q5"></p>
+
+    </section>
+
+
+    <button onclick="location.href='class9-maths.html'">
+        ⬅️ Back to Class 9 Maths
+    </button>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Study Utility Hub</p>
+</footer>
+
+
+<script>
+
+function checkAnswer(question, answer) {
+
+    const result = document.getElementById(question);
+
+    if (answer === "correct") {
+
+        result.textContent = "🎉 Correct Answer!";
+        result.style.color = "green";
+        result.style.fontWeight = "bold";
+
+    } else {
+
+        result.textContent = "❌ Incorrect. Try again!";
+        result.style.color = "red";
+        result.style.fontWeight = "bold";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

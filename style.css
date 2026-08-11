@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+header {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  font-size: 17px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #1d4ed8;
+  margin-top: 0;
+}
+
+h3 {
+  color: #1f2937;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+#percentageCalculator,
+#calculator,
+#ageCalculator {
+  border-top: 2px solid #e5e7eb;
+  padding-top: 20px;
+}
+
+#ageResult,
+#percentageResult,
+#searchResult {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.subject-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.subject-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+  border-color: #2563eb;
+}
+
+.subject-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subject-card h3 {
+  margin: 8px 0;
+  color: #1d4ed8;
+}
+
+.subject-card p {
+  color: #64748b;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+@media (max-width: 700px) {
+  .subject-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Utility Hub</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Study Utility Hub</h1>
+        <p>Study smarter. Learn better.</p>
+    </header>
+
+    <main>
+<section>
+    <h2>🔍 Search Study Material</h2>
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search for notes, subjects, chapters..."
+    >
+
+    <button onclick="searchStudy()">Search</button>
+
+    <p id="searchResult"></p>
+</section>
+        <section>
+            <h2>Welcome Students 👋</h2>
+            <p>
+                Find useful study materials and student tools
+                in one place.
+            </p>
+        </section>
+
+       <section>
+    <h2>📖 Class 9 Study Material</h2>
+    <p>Select a subject to continue learning.</p>
+    
+    <div class="subject-grid">
+        
+        <div class="subject-card">
+            <div class="subject-icon">📐</div>
+            <h3>Mathematics</h3>
+            <p>Class 9 Maths notes, chapters and study material.</p>
+            <button onclick="location.href='class9-maths.html'">
+                Open Maths
+            </button>
+        </div>
+        
+        <div class="subject-card">
+            <div class="subject-icon">🔬</div>
+            <h3>Science</h3>
+            <p>Class 9 Science notes, chapters and study material.</p>
+            <button onclick="location.href='class9-science.html'">
+                Open Science
+            </button>
+        </div>
+        
+        <div class="subject-card">
+            <div class="subject-icon">📖</div>
+            <h3>English</h3>
+            <p>Class 9 English notes, chapters and study material.</p>
+            <button onclick="location.href='class9-english.html'">
+                Open English
+            </button>
+        </div>
+        
+        <div class="subject-card">
+            <div class="subject-icon">📕</div>
+            <h3>Hindi</h3>
+            <p>Class 9 Hindi notes, chapters and study material.</p>
+            <button onclick="location.href='class9-hindi.html'">
+                Open Hindi
+            </button>
+        </div>
+        
+        <div class="subject-card">
+            <div class="subject-icon">🌍</div>
+            <h3>Social Science</h3>
+            <p>Class 9 Social Science notes, chapters and study material.</p>
+            <button onclick="location.href='class9-social-science.html'">
+                Open Social Science
+            </button>
+        </div>
+        
+    </div>
+</section>
+<section>
+    <h2>🛠️ Student Utilities</h2>
+<button onclick="document.getElementById('calculator').style.display='block'">
+    Calculator
+</button>
+   
+<button onclick="document.getElementById('percentageCalculator').style.display='block'">
+    Percentage Calculator
+</button>
+
+    <button onclick="document.getElementById('ageCalculator').style.display='block'">
+    Age Calculator
+</button>
+
+    <div id="percentageCalculator" style="display: none; margin-top: 20px;">
+
+        <h3>📊 Percentage Calculator</h3>
+
+        <input
+            type="number"
+            id="obtainedMarks"
+            placeholder="Obtained Marks"
+        >
+
+        <input
+            type="number"
+            id="totalMarks"
+            placeholder="Total Marks"
+        >
+
+        <button onclick="calculatePercentage()">
+            Calculate Percentage
+        </button>
+
+        <p id="percentageResult"></p>
+
+    </div>
+    <div id="calculator" hidden>
+
+    <h3>🧮 Calculator</h3>
+
+    <input
+        type="text"
+        id="calcDisplay"
+        readonly
+        style="width: 100%; padding: 12px; font-size: 20px; margin-bottom: 10px;"
+    >
+
+    <div>
+        <button onclick="addToCalculator('7')">7</button>
+        <button onclick="addToCalculator('8')">8</button>
+        <button onclick="addToCalculator('9')">9</button>
+        <button onclick="addToCalculator('/')">÷</button>
+    </div>
+
+    <div>
+        <button onclick="addToCalculator('4')">4</button>
+        <button onclick="addToCalculator('5')">5</button>
+        <button onclick="addToCalculator('6')">6</button>
+        <button onclick="addToCalculator('*')">×</button>
+    </div>
+
+    <div>
+        <button onclick="addToCalculator('1')">1</button>
+        <button onclick="addToCalculator('2')">2</button>
+        <button onclick="addToCalculator('3')">3</button>
+        <button onclick="addToCalculator('-')">−</button>
+    </div>
+
+    <div>
+        <button onclick="addToCalculator('0')">0</button>
+        <button onclick="addToCalculator('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="addToCalculator('+')">+</button>
+    </div>
+
+    <button onclick="clearCalculator()">Clear</button>
+
+</div>
+<div id="ageCalculator" style="display: none; margin-top: 20px;">
+    
+    <h3>🎂 Age Calculator</h3>
+    
+    <input type="date" id="birthDate">
+    
+    <button onclick="calculateAgeDirect()">
+    Calculate Age
+</button>
+    
+    <p id="ageResult" style="margin-top: 15px; font-size: 18px; font-weight: bold; color: green;"></p>
+    
+</div>
+</section>
+
+     
+    </main>
+
+    <footer>
+        <p>© 2026 Study Utility Hub</p>
+    </footer>
+
+<script>
+
+function searchStudy() {
+    const search = document.getElementById("searchBox").value.toLowerCase();
+    const result = document.getElementById("searchResult");
+
+    if (search.includes("math")) {
+        result.textContent = "📘 Maths material found!";
+    } 
+    else if (search.includes("science")) {
+        result.textContent = "🔬 Science material found!";
+    } 
+    else if (search.includes("english")) {
+        result.textContent = "📖 English material found!";
+    } 
+    else if (search.includes("hindi")) {
+        result.textContent = "📕 Hindi material found!";
+    } 
+    else if (search.includes("social")) {
+        result.textContent = "🌍 Social Science material found!";
+    } 
+    else {
+        result.textContent = "❌ No study material found.";
+    }
+}
+
+
+/* Percentage Calculator */
+
+function showPercentageCalculator() {
+    document.getElementById("percentageCalculator").style.display = "block";
+}
+
+function calculatePercentage() {
+    const obtained = Number(document.getElementById("obtainedMarks").value);
+    const total = Number(document.getElementById("totalMarks").value);
+    const result = document.getElementById("percentageResult");
+
+    if (obtained < 0 || total <= 0 || obtained > total) {
+        result.textContent = "⚠️ Please enter valid marks.";
+        result.style.color = "red";
+        return;
+    }
+
+    const percentage = (obtained / total) * 100;
+
+    result.textContent =
+        "🎉 Your Percentage: " + percentage.toFixed(2) + "%";
+
+    result.style.color = "green";
+}
+
+
+/* Calculator */
+
+function showCalculator() {
+    document.getElementById("calculator").style.display = "block";
+}
+
+function addToCalculator(value) {
+    document.getElementById("calcDisplay").value += value;
+}
+
+function calculateResult() {
+    const display = document.getElementById("calcDisplay");
+
+    try {
+        display.value = Function("return " + display.value)();
+    } 
+    catch {
+        display.value = "Error";
+    }
+}
+
+function clearCalculator() {
+    document.getElementById("calcDisplay").value = "";
+}
+function calculateAgeDirect() {
+    const value = document.getElementById("birthDate").value;
+    const result = document.getElementById("ageResult");
+    
+    if (!value) {
+        result.textContent = "Please select your date of birth.";
+        return;
+    }
+    
+    const birth = new Date(value + "T00:00:00");
+    const today = new Date();
+    
+    let years = today.getFullYear() - birth.getFullYear();
+    let months = today.getMonth() - birth.getMonth();
+    let days = today.getDate() - birth.getDate();
+    
+    if (days < 0) {
+        months--;
+        
+        const lastDay = new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            0
+        ).getDate();
+        
+        days += lastDay;
+    }
+    
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+    
+    result.textContent =
+        "🎂 Your Age: " +
+        years + " Years, " +
+        months + " Months, " +
+        days + " Days";
+    
+    result.style.color = "green";
+    result.style.fontSize = "18px";
+    result.style.fontWeight = "bold";
+}
+</script>
+</body>
+</html>
