@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Class 9 - Study Utility Hub</title>
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 9 Hub | Study Utility</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header class="site-header compact-header">
+  <nav class="navbar">
+    <a class="brand" href="index.html">📚 <span>Study Utility</span></a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="#subjects">Subjects</a></div>
+  </nav>
+  <div class="compact-hero">
+    <span class="eyebrow">STUDY DASHBOARD</span>
+    <h1>Class 9 Hub 🎓</h1>
+    <p>Your subjects and quick study resources, all in one place.</p>
+  </div>
+</header>
 
-    <header>
-        <h1>📚 Class 9 Study Hub</h1>
-<p>Notes, subjects and study resources in one place</p>
-        
-    </header>
-<button onclick="location.href='index.html'">
-    🏠 Home
-</button>
-    <main>
+<main>
+<section id="subjects">
+  <div class="section-heading">
+    <div><span class="section-label">CORE SUBJECTS</span><h2>Choose a Subject</h2></div>
+    <a class="text-link" href="index.html">← Home</a>
+  </div>
+  <div class="subject-grid">
+    <article class="subject-card maths"><div class="card-top"><span class="subject-icon">📐</span><span class="pill">Maths</span></div><h3>Mathematics</h3><p>Chapters and problem-solving resources.</p><a class="btn btn-primary" href="class9-maths.html">Open Maths</a></article>
+    <article class="subject-card science"><div class="card-top"><span class="subject-icon">🔬</span><span class="pill">Science</span></div><h3>Science</h3><p>Explore the Class 9 science chapters.</p><a class="btn btn-primary" href="class9-science.html">Open Science</a></article>
+    <article class="subject-card english"><div class="card-top"><span class="subject-icon">📖</span><span class="pill">English</span></div><h3>English</h3><p>Literature, grammar and writing skills.</p><a class="btn btn-primary" href="class9-english.html">Open English</a></article>
+    <article class="subject-card hindi"><div class="card-top"><span class="subject-icon">📕</span><span class="pill">Hindi</span></div><h3>Hindi</h3><p>Class 9 Hindi chapters and resources.</p><a class="btn btn-primary" href="class9-hindi.html">Open Hindi</a></article>
+    <article class="subject-card social"><div class="card-top"><span class="subject-icon">🌍</span><span class="pill">Social Science</span></div><h3>Social Science</h3><p>History, geography, civics and economics.</p><a class="btn btn-primary" href="class9-social-science.html">Open Social Science</a></article>
+  </div>
+</section>
 
-        <h2>📖 Subjects</h2>
+<section>
+  <div class="section-heading"><div><span class="section-label">QUICK STUDY</span><h2>Study Better</h2></div></div>
+  <div class="quick-grid">
+    <div class="quick-card"><span>📝</span><h3>Notes</h3><p>Use the subject pages to access your available study material.</p></div>
+    <div class="quick-card"><span>🎯</span><h3>Practice</h3><p>Work through chapters and revisit difficult topics.</p></div>
+    <div class="quick-card"><span>⏱️</span><h3>Stay Consistent</h3><p>Short, regular study sessions can make revision easier.</p></div>
+  </div>
+</section>
+</main>
 
-        <button onclick="location.href='class9-maths.html'">Mathematics</button>
-        <button onclick="location.href='class9-science.html'">
-    Science
-</button>
-        <button onclick="location.href='class9-english.html'">
-    English
-</button>
-        <button onclick="location.href='class9-hindi.html'">
-    Hindi
-</button>
-        <button onclick="location.href='class9-social-science.html'">
-    Social Science
-</button>
-
-        <h2>📝 Quick Study</h2>
-
-        <button>Notes</button>
-        <button>Important Questions</button>
-        <button>Study Tips</button>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Study Utility Hub</p>
-    </footer>
-
+<footer><div class="footer-inner"><div><strong>📚 Study Utility</strong><p>Class 9 study material, made simple.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="class9.html">Class 9 Hub</a></div></div><p class="copyright">© 2026 Study Utility • Built for learning</p></footer>
 </body>
 </html>
